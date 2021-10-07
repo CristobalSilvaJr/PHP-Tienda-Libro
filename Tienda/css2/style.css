@@ -1,0 +1,98 @@
+:root{
+    --primario:#e2eafc;
+    --primarioSecundario:#abc4ff;
+    --letras:#495057;
+    --letrasSecundarias:#3e1f47;
+    --precio:#52b788;    
+    --fuente: 'Roboto Condensed', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*Ahora al poner 1 rem sera igual a 10 px*/
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+/*Gobales*/
+body{
+    background-color:var(--primario) ;
+    font-size: 1.6rem; /*Equivale a 16px*/
+    line-height: 1.5; /*interlineado*/
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--letrasSecundarias);
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    text-align: center;
+    color: var(--letras);
+    font-family: var(--fuente);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+/* Footer */
+.footer{
+background-color: var(--primarioSecundario);
+padding: 1rem 0;
+margin-top: 2rem;
+}
+.footer__texto{
+text-align:center;
+font-family: var(--fuente);
+font-size: 1.8rem;
+}
+/* Header */
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logotipo{
+    padding: 1rem 0;
+    width: 200px;
+ 
+}
+.navegacion{
+    background-color: var(--primarioSecundario);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.navegacion__enlace{
+    font-family: var(--fuente);
+    color: var(--letras);
+    font-size: 3rem;
+    
+}
+.navegacion__enlace--activo,
+.navegacion__enlace:hover{
+    color: var(--primario);
+}
+.producto__precio{
+    color: green;
+}
+.producto__nombre,
+.producto__precio{
+    font-size: 3rem;
+    font-family: var(--fuente);
+    margin: 1rem 0;
+    text-align: center;
+}
